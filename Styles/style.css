@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-style: italic;
+    text-align: justify;
+    background-color: #ffffff
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+article {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#top-container {
+    height: 65px;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: #8b8b8b 0 3px 4px;
+}
+
+#logo {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.dropdown-menu {
+    display: none;
+    height: fit-content;
+    width: 30%;
+    padding: 1rem;
+    font-size: 14px;
+    background-color: #000000;
+    box-shadow: #3a3a3a 0px 2px 5px;
+}
+
+.dropdown-menu li {
+    margin: 20px 0;
+}
+
+#logo:hover .dropdown-menu {
+    position: absolute;
+    display: block;
+}
+
+.white-tapes {
+    float: right;
+    height: 65px;
+    width: 35%;
+    margin-right: 1rem;
+    background-color: white;
+}
+
+.red-area {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000;
+}
+
+.top-menu {
+    display: none;
+    padding-top: 1.3rem;
+    justify-content: center;
+}
+
+.top-menu ul {
+    display: flex;
+}
+
+.top-menu ul li {
+    margin: 0 10px;
+}
+
+#cover {
+    height: 900px;
+    background-image: url(./Assets/jj_BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.site-slogan {
+    padding: 3rem 1rem;
+    font-size: 14px;
+}
+
+.site-slogan hr {
+    width: 70%;
+}
+
+#buttons button {
+    height: 40px;
+    width: 35%;
+    margin: 10px 10px;
+    color: #ffffff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+#buttons button:hover {
+    transition: .5s;
+    transform: scale(1.05);
+}
+
+#closure {
+    padding: 1rem;
+    color: black;
+}
+
+#a02 img,
+#closure img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+/* ------------------ */
+/* - RESPONSIVENESS - */
+/* ------------------ */
+
+@media screen and (min-width: 412px) {
+    .site-slogan hr {
+        width: 45%;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    .dropdown-menu {
+        width: 25%;
+    }
+
+    .site-slogan hr {
+        width: 30%;
+    }
+
+    #buttons button {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #arrow {
+        display: none;
+    }
+
+    #logo:hover .dropdown-menu {
+        display: none;
+    }
+
+    .white-tapes {
+        margin-right: 2rem;
+    }
+
+    .top-menu {
+        display: flex;
+    }
+
+    #cover {
+        height: 600px;
+        background-image: url(./Assets/cover_BG.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #cover-content {
+        background-color: #000000a4;
+    }
+
+    .site-slogan hr {
+        width: 20%;
+    }
+
+    #buttons {
+        display: none;
+    }
+
+    #a02 img {
+        display: block;
+        width: 70%;
+        margin: auto;
+        border-radius: 1%;
+    }
+
+    #closure {
+        text-align: center;
+    }
+
+    #closure img {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #container-content {
+        width: 80%;
+        margin: auto;
+    }
+
+    .top-menu ul li {
+        margin: 0 20px;
+    }
+
+    .site-slogan {
+        width: 80%;
+        margin: auto;
+    }
+
+    article {
+        width: 80%;
+        margin: auto;
+    }
+}
